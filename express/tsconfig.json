@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "target": "es2019",
+    "module": "commonjs",
+    "outDir": "./build"
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}
