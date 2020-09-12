@@ -20,13 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5fa50e-96d7-407d-a862-a75c9cc637fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../express/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../express/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/CorsBootstrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular/src/app/demo-view/demo-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular/src/app/demo-view/demo-view.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/PrepareSession.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/PrepareSession.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/netcoreapp3.1/csharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/netcoreapp3.1/csharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/netcoreapp3.1/csharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/netcoreapp3.1/csharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/netcoreapp3.1/csharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/netcoreapp3.1/csharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/netcoreapp3.1/csharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/netcoreapp3.1/csharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/netcoreapp3.1/csharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/netcoreapp3.1/csharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,6 +189,7 @@
       <updated>1599873417545</updated>
       <workItem from="1599873419457" duration="1864000" />
       <workItem from="1599878021707" duration="4823000" />
+      <workItem from="1599901926227" duration="661000" />
     </task>
     <servers />
   </component>

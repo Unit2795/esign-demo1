@@ -19,6 +19,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
 import { MatRadioModule } from '@angular/material/radio';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
-    HighlightModule
+    HighlightModule,
+    MatExpansionModule
   ],
   providers: [
     {

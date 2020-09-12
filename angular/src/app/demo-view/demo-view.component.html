@@ -93,10 +93,30 @@
   </div>
   <hr/>
   <div *ngFor="let lang of languages; index as l" [style.display]="activeLanguage === l ? 'block' : 'none'">
-    <pre>
-      <code [highlight]="code">
-        {{lang.snippet}}
-      </code>
-    </pre>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Retrieve Access Token
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <pre>
+        <code [highlight]="code">
+          {{lang.token}}
+        </code>
+      </pre>
+    </mat-expansion-panel>
+    <h3 class="text-center" [style.fontSize]="'24px'"></h3>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Retrieve Signing Session URL
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <pre>
+        <code [highlight]="code">
+          {{lang.signing}}
+        </code>
+      </pre>
+    </mat-expansion-panel>
   </div>
 </div>

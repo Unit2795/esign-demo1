@@ -17,11 +17,20 @@ namespace csharp
 
         static async Task<bool> validateCaptcha(string token)
         {
+            var envReader = new EnvReader();
+            
             var success = false;
+
+            var responseString = await envReader.GetStringValue("CAPTCHA_ENDPOINT")
+                .PostUrlEncodedAsync(new
+                {
+                    secret = envReader.GetStringValue("CAPTCHA_SECRET"),
+                    response = token
+                }).ReceiveString();
             
-            
-            
-            return success;
+            dynamic responseJson = JsonConvert.DeserializeObject(responseString);
+
+            return responseJson.success;
         }
 
         static async Task<string> RetrieveAccessToken()

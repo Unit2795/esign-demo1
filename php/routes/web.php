@@ -37,8 +37,6 @@ function retrieveAccessToken() {
         "scope" => "read-write"
     ]);
 
-
-
     return "Bearer " . json_decode($response->body())->{'access_token'};
 }
 
