@@ -344,23 +344,7 @@ export class DemoViewComponent implements OnInit {
       `
     },
     {
-      name: 'Go',
-      snippet: ``
-    },
-    {
-      name: 'Ruby',
-      snippet: ``
-    },
-    {
-      name: 'Python',
-      snippet: ``
-    },
-    {
       name: 'C#',
-      snippet: ``
-    },
-    {
-      name: 'C',
       snippet: ``
     },
     {
