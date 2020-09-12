@@ -20,14 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5fa50e-96d7-407d-a862-a75c9cc637fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../angular/src/app/demo-view/demo-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular/src/app/demo-view/demo-view.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../express/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../express/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -177,7 +184,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599873417545</updated>
-      <workItem from="1599873419457" duration="42000" />
+      <workItem from="1599873419457" duration="1864000" />
+      <workItem from="1599878021707" duration="4823000" />
     </task>
     <servers />
   </component>
@@ -194,11 +202,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="404" key="#Composer" timestamp="1599873460360">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="770" y="404" key="#Composer/0.0.1920.1050/-1920.8.1920.1050@0.0.1920.1050" timestamp="1599873460360" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599875284495">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.8.1920.1050@0.0.1920.1050" timestamp="1599875284495" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599875284495">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.8.1920.1050@0.0.1920.1050" timestamp="1599875284495" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599875284495">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.8.1920.1050@0.0.1920.1050" timestamp="1599875284495" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599875284495">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.8.1920.1050@0.0.1920.1050" timestamp="1599875284495" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599882312234">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050/-1920.8.1920.1050@0.0.1920.1050" timestamp="1599882312234" />
   </component>
 </project>

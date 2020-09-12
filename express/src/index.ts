@@ -19,6 +19,9 @@ async function validateCaptcha(token: string)
 
     let options = {
         "method": "post",
+        "headers": {
+            "Origin": process.env.CORS_ORIGIN
+        },
         "body": params
     };
 
@@ -29,7 +32,7 @@ async function validateCaptcha(token: string)
     return data.success;
 }
 
-async function retrieveToken()
+async function retrieveAccessToken()
 {
     const params = new URLSearchParams();
     params.append('grant_type', 'client_credentials');
@@ -113,7 +116,7 @@ app.post('/demoform', async function (request, result) {
         return result.sendStatus(401);
     }
 
-    let token = await retrieveToken();
+    let token = await retrieveAccessToken();
 
     let url = await retrieveSigningSession(token, request, result);
 
