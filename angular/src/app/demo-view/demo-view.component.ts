@@ -571,6 +571,7 @@ export class DemoViewComponent implements OnInit {
       "method": "post",
       "headers": {
         "Authorization": token,
+        "Origin": "esign1.djoz.us",
         "Content-Type": "application/json",
       },
       "body": body
@@ -578,7 +579,7 @@ export class DemoViewComponent implements OnInit {
 
     let response;
     try {
-      response = await fetch('http://localhost:4567/demoform', options);
+      response = await fetch('https://o0d03o9f5j.execute-api.us-east-1.amazonaws.com/dev/demoform', options);
     }
     catch (e) {
       return alert("Request failed");
