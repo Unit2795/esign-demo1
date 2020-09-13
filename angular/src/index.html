@@ -29,12 +29,14 @@
     }
 
     var onloadCallback = function() {
-      grecaptcha.render('captcha_element', {
-        'sitekey' : '6LdjX8sZAAAAACIP6twWA0sFzu3fYntsehywUItg',
-        'callback': onCaptchaSuccess,
-        'expired-callback': onCaptchaFail,
-        'error-callback': onCaptchaFail
-      });
+      setTimeout(function() {
+        grecaptcha.render(document.getElementById('captchaElement'), {
+          'sitekey' : '6LdjX8sZAAAAACIP6twWA0sFzu3fYntsehywUItg',
+          'callback': onCaptchaSuccess,
+          'expired-callback': onCaptchaFail,
+          'error-callback': onCaptchaFail
+        });
+      }, 1000);
     };
   </script>
 </body>
