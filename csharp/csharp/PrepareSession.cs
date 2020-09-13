@@ -87,7 +87,7 @@ namespace csharp
                         ],
                         'createEmbeddedSigningSession': true,
                         'createEmbeddedSigningSessionForAllParties': true,
-                        'themeColor': '#80ff80'
+                        'themeColor': '#003C1C'
                 }}
             ";
 

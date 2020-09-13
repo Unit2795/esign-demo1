@@ -71,8 +71,8 @@ async function retrieveSigningSession(token, parameters)
             {
                 "name": fullName,
                 "start_date": parameters.start,
-                "yes_services": parameters.services ? "true" : "false",
-                "no_services": parameters.services ? "false" : "true",
+                "yes_services": (parameters.services === "true" ? "true" : "false"),
+                "no_services": (parameters.services === "true" ? "false" : "true"),
                 "comments": parameters.comments
             },
         "parties": [
@@ -88,7 +88,7 @@ async function retrieveSigningSession(token, parameters)
         ],
         "createEmbeddedSigningSession": true,
         "createEmbeddedSigningSessionForAllParties": true,
-        "themeColor": "#80ff80"
+        "themeColor": "#003C1C"
     });
 
     let options =
@@ -106,12 +106,12 @@ async function retrieveSigningSession(token, parameters)
 
     let jsonRes = await embedResult.json();
 
-    /*if (jsonRes.embeddedSigningSessions.length === 0)
+    if (jsonRes.embeddedSigningSessions.length === 0)
     {
         return "";
-    }*/
+    }
 
-    return JSON.stringify(jsonRes);
+    return jsonRes.embeddedSigningSessions[0].embeddedSessionURL;
 }
 
 

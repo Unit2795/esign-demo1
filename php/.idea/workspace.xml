@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5fa50e-96d7-407d-a862-a75c9cc637fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../angular/src/app/demo-view/demo-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular/src/app/demo-view/demo-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lambda/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda/handler.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,7 @@
       <workItem from="1599873419457" duration="1864000" />
       <workItem from="1599878021707" duration="4823000" />
       <workItem from="1599901926227" duration="1321000" />
-      <workItem from="1599922097393" duration="810000" />
+      <workItem from="1599922097393" duration="811000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
+import { DOCUMENT } from '@angular/common';
+
+declare const grecaptcha : any;
+
+declare global {
+  interface Window {
+    grecaptcha : any;
+    reCaptchaLoad: () => void
+  }
+}
 
 @Component({
   selector: 'app-demo-view',
@@ -106,7 +116,7 @@ export class DemoViewComponent implements OnInit {
                     ],
                     'createEmbeddedSigningSession': true,
                     'createEmbeddedSigningSessionForAllParties': true,
-                    'themeColor': '#80ff80'
+                    'themeColor': '#003C1C'
             }}
             ";
 
@@ -193,7 +203,7 @@ export class DemoViewComponent implements OnInit {
 
           String fullName = myObject.get("fname").getAsString() + " " + myObject.get("lname").getAsString();;
 
-          String sendString = "{\\"folderName\\":\\"eSign Genie API Demo Documents\\",\\"templateIds\\":[121195],\\"fields\\":{\\"name\\":\\"%s\\",\\"start_date\\":\\"%s\\",\\"yes_services\\":\\"%s\\",\\"no_services\\":\\"%s\\",\\"comments\\":\\"%s\\"},\\"parties\\":[{\\"firstName\\":\\"%s\\",\\"lastName\\":\\"%s\\",\\"emailId\\":\\"%s\\",\\"permission\\":\\"FILL_FIELDS_AND_SIGN\\",\\"workflowSequence\\":1,\\"sequence\\":1,\\"allowNameChange\\":false}],\\"createEmbeddedSigningSession\\":true,\\"createEmbeddedSigningSessionForAllParties\\":true,\\"themeColor\\":\\"#80ff80\\"}";
+          String sendString = "{\\"folderName\\":\\"eSign Genie API Demo Documents\\",\\"templateIds\\":[121195],\\"fields\\":{\\"name\\":\\"%s\\",\\"start_date\\":\\"%s\\",\\"yes_services\\":\\"%s\\",\\"no_services\\":\\"%s\\",\\"comments\\":\\"%s\\"},\\"parties\\":[{\\"firstName\\":\\"%s\\",\\"lastName\\":\\"%s\\",\\"emailId\\":\\"%s\\",\\"permission\\":\\"FILL_FIELDS_AND_SIGN\\",\\"workflowSequence\\":1,\\"sequence\\":1,\\"allowNameChange\\":false}],\\"createEmbeddedSigningSession\\":true,\\"createEmbeddedSigningSessionForAllParties\\":true,\\"themeColor\\":\\"#003C1C\\"}";
           String populatedSendString = String.format(
                   sendString,
                   fullName,
@@ -315,7 +325,7 @@ export class DemoViewComponent implements OnInit {
 
           val fullName: String = myObject.get("fname").asString + " " + myObject.get("lname").asString
 
-          val sendString = "{\\"folderName\\":\\"eSign Genie API Demo Documents\\",\\"templateIds\\":[121195],\\"fields\\":{\\"name\\":\\"%s\\",\\"start_date\\":\\"%s\\",\\"yes_services\\":\\"%s\\",\\"no_services\\":\\"%s\\",\\"comments\\":\\"%s\\"},\\"parties\\":[{\\"firstName\\":\\"%s\\",\\"lastName\\":\\"%s\\",\\"emailId\\":\\"%s\\",\\"permission\\":\\"FILL_FIELDS_AND_SIGN\\",\\"workflowSequence\\":1,\\"sequence\\":1,\\"allowNameChange\\":false}],\\"createEmbeddedSigningSession\\":true,\\"createEmbeddedSigningSessionForAllParties\\":true,\\"themeColor\\":\\"#80ff80\\"}"
+          val sendString = "{\\"folderName\\":\\"eSign Genie API Demo Documents\\",\\"templateIds\\":[121195],\\"fields\\":{\\"name\\":\\"%s\\",\\"start_date\\":\\"%s\\",\\"yes_services\\":\\"%s\\",\\"no_services\\":\\"%s\\",\\"comments\\":\\"%s\\"},\\"parties\\":[{\\"firstName\\":\\"%s\\",\\"lastName\\":\\"%s\\",\\"emailId\\":\\"%s\\",\\"permission\\":\\"FILL_FIELDS_AND_SIGN\\",\\"workflowSequence\\":1,\\"sequence\\":1,\\"allowNameChange\\":false}],\\"createEmbeddedSigningSession\\":true,\\"createEmbeddedSigningSessionForAllParties\\":true,\\"themeColor\\":\\"#003C1C\\"}"
           val populatedSendString = String.format(
                   sendString,
                   fullName,
@@ -407,7 +417,7 @@ export class DemoViewComponent implements OnInit {
           $email = $data->{"email"};
           $comments = $data->{"comments"};
 
-          $sendString = "{\\"folderName\\":\\"eSign Genie API Demo Documents\\",\\"templateIds\\":[121195],\\"fields\\":{\\"name\\":\\"$fullName\\",\\"start_date\\":\\"$startDate\\",\\"yes_services\\":\\"$yesServices\\",\\"no_services\\":\\"$noServices\\",\\"comments\\":\\"$comments\\"},\\"parties\\":[{\\"firstName\\":\\"$firstName\\",\\"lastName\\":\\"$lastName\\",\\"emailId\\":\\"$email\\",\\"permission\\":\\"FILL_FIELDS_AND_SIGN\\",\\"workflowSequence\\":1,\\"sequence\\":1,\\"allowNameChange\\":false}],\\"createEmbeddedSigningSession\\":true,\\"createEmbeddedSigningSessionForAllParties\\":true,\\"themeColor\\":\\"#80ff80\\"}";
+          $sendString = "{\\"folderName\\":\\"eSign Genie API Demo Documents\\",\\"templateIds\\":[121195],\\"fields\\":{\\"name\\":\\"$fullName\\",\\"start_date\\":\\"$startDate\\",\\"yes_services\\":\\"$yesServices\\",\\"no_services\\":\\"$noServices\\",\\"comments\\":\\"$comments\\"},\\"parties\\":[{\\"firstName\\":\\"$firstName\\",\\"lastName\\":\\"$lastName\\",\\"emailId\\":\\"$email\\",\\"permission\\":\\"FILL_FIELDS_AND_SIGN\\",\\"workflowSequence\\":1,\\"sequence\\":1,\\"allowNameChange\\":false}],\\"createEmbeddedSigningSession\\":true,\\"createEmbeddedSigningSessionForAllParties\\":true,\\"themeColor\\":\\"#003C1C\\"}";
 
           $createResponse = Http::withHeaders([
               "Origin" => env('CORS_ORIGIN'),
@@ -475,7 +485,7 @@ export class DemoViewComponent implements OnInit {
               ],
               "createEmbeddedSigningSession": true,
               "createEmbeddedSigningSessionForAllParties": true,
-              "themeColor": "#80ff80"
+              "themeColor": "#003C1C"
           });
 
           let options =
@@ -514,9 +524,9 @@ export class DemoViewComponent implements OnInit {
     services: new FormControl('false')
   });
   signingUrl: string = '';
+  captchaSuccess: boolean = false;
 
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -559,7 +569,7 @@ export class DemoViewComponent implements OnInit {
       "fname": this.demoForm.value.fname,
       "lname": this.demoForm.value.lname,
       "start": formattedDate,
-      "services": this.demoForm.value.lname,
+      "services": this.demoForm.value.services,
       "email": this.demoForm.value.email,
       "comments": this.demoForm.value.comments
     });

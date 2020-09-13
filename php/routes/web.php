@@ -52,7 +52,7 @@ function retrieveSigningSession($token, $request, $response) {
     $email = $data->{"email"};
     $comments = $data->{"comments"};
 
-    $sendString = "{\"folderName\":\"eSign Genie API Demo Documents\",\"templateIds\":[121195],\"fields\":{\"name\":\"$fullName\",\"start_date\":\"$startDate\",\"yes_services\":\"$yesServices\",\"no_services\":\"$noServices\",\"comments\":\"$comments\"},\"parties\":[{\"firstName\":\"$firstName\",\"lastName\":\"$lastName\",\"emailId\":\"$email\",\"permission\":\"FILL_FIELDS_AND_SIGN\",\"workflowSequence\":1,\"sequence\":1,\"allowNameChange\":false}],\"createEmbeddedSigningSession\":true,\"createEmbeddedSigningSessionForAllParties\":true,\"themeColor\":\"#80ff80\"}";
+    $sendString = "{\"folderName\":\"eSign Genie API Demo Documents\",\"templateIds\":[121195],\"fields\":{\"name\":\"$fullName\",\"start_date\":\"$startDate\",\"yes_services\":\"$yesServices\",\"no_services\":\"$noServices\",\"comments\":\"$comments\"},\"parties\":[{\"firstName\":\"$firstName\",\"lastName\":\"$lastName\",\"emailId\":\"$email\",\"permission\":\"FILL_FIELDS_AND_SIGN\",\"workflowSequence\":1,\"sequence\":1,\"allowNameChange\":false}],\"createEmbeddedSigningSession\":true,\"createEmbeddedSigningSessionForAllParties\":true,\"themeColor\":\"#003C1C\"}";
 
     $createResponse = Http::withHeaders([
         "Origin" => env('CORS_ORIGIN'),

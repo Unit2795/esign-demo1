@@ -1,4 +1,4 @@
 <mat-form-field appearance="outline" [ngClass]="'full-width'" [formGroup]="form">
-  <mat-label>{{label}}</mat-label>
+  <mat-label>{{label}} <span [style.color]="'red'"></span></mat-label>
   <input matInput name="{{name}}" type="{{type}}" formControlName="{{control}}">
 </mat-form-field>

@@ -128,7 +128,7 @@ public class Main {
 
         String fullName = myObject.get("fname").getAsString() + " " + myObject.get("lname").getAsString();;
 
-        String sendString = "{\"folderName\":\"eSign Genie API Demo Documents\",\"templateIds\":[121195],\"fields\":{\"name\":\"%s\",\"start_date\":\"%s\",\"yes_services\":\"%s\",\"no_services\":\"%s\",\"comments\":\"%s\"},\"parties\":[{\"firstName\":\"%s\",\"lastName\":\"%s\",\"emailId\":\"%s\",\"permission\":\"FILL_FIELDS_AND_SIGN\",\"workflowSequence\":1,\"sequence\":1,\"allowNameChange\":false}],\"createEmbeddedSigningSession\":true,\"createEmbeddedSigningSessionForAllParties\":true,\"themeColor\":\"#80ff80\"}";
+        String sendString = "{\"folderName\":\"eSign Genie API Demo Documents\",\"templateIds\":[121195],\"fields\":{\"name\":\"%s\",\"start_date\":\"%s\",\"yes_services\":\"%s\",\"no_services\":\"%s\",\"comments\":\"%s\"},\"parties\":[{\"firstName\":\"%s\",\"lastName\":\"%s\",\"emailId\":\"%s\",\"permission\":\"FILL_FIELDS_AND_SIGN\",\"workflowSequence\":1,\"sequence\":1,\"allowNameChange\":false}],\"createEmbeddedSigningSession\":true,\"createEmbeddedSigningSessionForAllParties\":true,\"themeColor\":\"#003C1C\"}";
         String populatedSendString = String.format(
                 sendString,
                 fullName,
