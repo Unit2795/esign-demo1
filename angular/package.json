@@ -29,6 +29,7 @@
     "grecaptcha": "^1.0.3",
     "highlight.js": "^10.1.2",
     "moment": "^2.27.0",
+    "ngx-captcha": "^8.0.1",
     "ngx-highlightjs": "^4.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

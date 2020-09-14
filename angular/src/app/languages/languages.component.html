@@ -1,0 +1,47 @@
+<div [style.display]="activeIndex === 1 ? 'block' : 'none'">
+  <div class="row programming-title">
+    <div class="col-md-6 center">
+      <h2>{{languages[activeLanguage].name}}</h2>
+    </div>
+    <div class="col-md-6 center">
+      <mat-form-field appearance="outline" [ngClass]="'full-width'">
+        <mat-label>Programming Language</mat-label>
+        <select matNativeControl (input)="setActiveLanguage($event)">
+          <option
+            value="{{x}}"
+            *ngFor="let item of languages; index as x"
+          >
+            {{item.name}}
+          </option>
+        </select>
+      </mat-form-field>
+    </div>
+  </div>
+  <hr/>
+  <div *ngFor="let lang of languages; index as l" [style.display]="activeLanguage === l ? 'block' : 'none'">
+    <mat-expansion-panel [expanded]="true" [style.background]="'#e6e6e6'">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h3 [style.fontSize]="'20px'">Retrieve Access Token</h3>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <pre>
+        <code [highlight]="code">
+          {{lang.token}}
+        </code>
+      </pre>
+    </mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true" [style.background]="'#e6e6e6'">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h3 [style.fontSize]="'20px'">Retrieve Signing Session URL</h3>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <pre>
+        <code [highlight]="code">
+          {{lang.signing}}
+        </code>
+      </pre>
+    </mat-expansion-panel>
+  </div>
+</div>
